@@ -69,7 +69,7 @@ class CalcController {
         this.clearAll();
         break;
 
-      case "subtraction":
+      case "sum":
         this.clearAll();
         break;
 
@@ -105,7 +105,7 @@ class CalcController {
 
     buttons.forEach((btn, index) => {
       this.addEventListenerAll(btn, "click drag", e => {
-        let textBtn = console.log(btn.className.baseVal.replace("btn-", ""));
+        let textBtn = btn.className.baseVal.replace("btn-", "");
 
         this.execBtn(textBtn);
       });
